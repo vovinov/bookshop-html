@@ -5,15 +5,11 @@
 
 .contacts-content {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     &__item {
         flex: 0 1 auto;
     }
-}
-
-.contacts-icon {
-    width: 21px;
-     height: 21px;
 }
 
 .contacts-info {
