@@ -1,0 +1,28 @@
+body {
+  font-family: 'CerebriSans', sans-serif;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1150px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+@import "./null";
+@import "./variables";
+@import "./fonts";
+@import "./contacts";
+@import "./header";
