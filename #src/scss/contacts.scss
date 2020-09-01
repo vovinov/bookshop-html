@@ -1,7 +1,12 @@
 .contacts {
     padding: 9px 0;
     border-bottom: 1px solid $colorGreyBorder;
+
+    @media (max-width: 767.98px) {
+        padding: 15px 0;
+    }
 }
+
 
 .contacts-content {
     display: flex;
@@ -10,6 +15,9 @@
     &__item {
         flex: 0 1 auto;
     }
+    @media (max-width: 767.98px) {
+        justify-content: center;
+      }
 }
 
 .contacts-info {
@@ -19,13 +27,20 @@
 
     &__icon {
         margin-right: 10px;
+
+        @media (max-width: 767.98px) {
+            margin-right: 0;
+        }
     }
 
     &__link {
         text-decoration: none;
         font-size: 1.4rem;
-        color: rgb(25, 17, 11);
-        line-height: 1.2;
+        color: $colorBlack;
+        line-height: 21px;
+        @media (max-width: 767.98px) {
+            font-size: 0;
+          }
     }    
 
     &__circle {
@@ -48,6 +63,10 @@
 
     &:nth-child(2) {
         margin-right: 0;
+
+        @media (max-width: 767.98px) {
+            margin-right: 30px;
+        }
     }
 }
 
@@ -65,4 +84,8 @@
             margin-right: 20px;
         }
     }
+
+    @media (max-width: 767.98px) {
+        flex-grow: 0;
+      }
 }

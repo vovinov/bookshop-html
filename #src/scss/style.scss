@@ -31,9 +31,21 @@ img {
   }
 }
 
+.container-content {
+  max-width: 1420px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
 .icon {
   width: 21px;
   height: 21px;
+  cursor: pointer;
+}
+
+.button {
+  display: inline-block;
+  padding: 18px 50px;
 }
 
 @import "./null";
@@ -41,3 +53,8 @@ img {
 @import "./fonts";
 @import "./contacts";
 @import "./header";
+@import "./intro";
+
+
+
+@import "./sliders/main-slider";
