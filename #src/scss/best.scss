@@ -1,0 +1,73 @@
+.best {
+    margin-bottom: 100px;
+}
+
+.best__list {
+    position: relative;
+    display: flex;
+}
+.best__card {
+    flex: 0 1 20%;
+}
+.card-best {
+    border: 1px solid $colorGreyBorder;
+}
+.card-best__content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    padding: 30px;
+}
+
+.card-best__img {
+    flex: 0 0 auto;
+    padding: 20px;
+}
+
+.card-best__version {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: $colorRed;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card-best__title {
+    font-size: 1.6rem;
+    flex: 1;
+    margin-bottom: 12px;
+}
+
+.card-best__author {
+    font-size: 1.4rem;
+    color: rgb(124, 110, 101); 
+    flex: 1;   
+}
+.card-best__price {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 15px 0;
+}
+.card-best__rating {
+    display: flex;
+    align-items: center;
+}
+.rating {
+}
+.rating__list {
+    display: inline-flex;
+    margin-right: 11px;
+}
+.icon--rating {
+    width: 12px;
+    height: 12px;
+    fill: $colorYellow;
+    margin-right: 7px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.rating__count {
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
