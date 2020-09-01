@@ -41,6 +41,18 @@ img {
   width: 21px;
   height: 21px;
   cursor: pointer;
+  transition: all .3s ease-in-out;
+
+  &--arrow {
+    width: 10px;
+    height: 16px;
+  }
+
+  &--category {
+    width: 50px;
+    height: 43px;
+    margin-bottom: 30px;
+  }
 }
 
 .button {
@@ -51,9 +63,11 @@ img {
 @import "./null";
 @import "./variables";
 @import "./fonts";
+@import "./ui";
 @import "./contacts";
 @import "./header";
 @import "./intro";
+@import "./categories";
 
 
 

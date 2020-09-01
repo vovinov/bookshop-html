@@ -1,0 +1,30 @@
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 31px;
+    border-bottom: 1px solid $colorGreyBorder;
+
+    &__header {
+        font-size: 3rem;
+        font-weight: 500;
+    }
+
+    &__link {
+        display: flex;
+        font-size: 1.6rem;
+        font-weight: 500;
+        color: $colorBlack;
+        transition: all .3s ease-in-out;
+        span {
+            margin-right: 13px;
+        }
+        &:hover {
+            color: $colorRedActiveLink;
+            & .icon--arrow {
+                fill: $colorRedActiveLink;
+            }
+        }
+    }
+}
+
