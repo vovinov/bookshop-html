@@ -8,9 +8,20 @@
 }
 .best__card {
     flex: 0 1 20%;
+    border: 1px solid $colorGreyBorder;
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        border: 1px solid $colorBlack;
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+
+        & .actions {
+            display: flex;
+        }
+    }
 }
 .card-best {
-    border: 1px solid $colorGreyBorder;
+    color: $colorBlack;
 }
 .card-best__content {
     display: flex;
@@ -52,8 +63,7 @@
     display: flex;
     align-items: center;
 }
-.rating {
-}
+
 .rating__list {
     display: inline-flex;
     margin-right: 11px;
@@ -70,4 +80,61 @@
 .rating__count {
     font-size: 1.4rem;
     line-height: 1.2;
+}
+
+.actions {
+    display: none;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.actions__button {
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: 1.6rem;  
+
+    &:hover {
+        &::after {
+            width: 100%;
+        }
+    }
+
+    &:after {
+        position: absolute;
+        content: '';
+        height: 1px;
+        width: 0;
+        bottom: -10px;
+        left: 0;
+        background-color: $colorBlack;
+        transition: all .2s ease-in-out;
+    }
+}
+
+.actions__icon {
+    position: relative;
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        background-color: red;
+
+        svg {
+            fill: $colorWhite;
+        }
+    }
+
+    svg {
+        position: absolute;
+        width: 22px;
+        height: 22px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .2s ease-in-out;
+    }
 }

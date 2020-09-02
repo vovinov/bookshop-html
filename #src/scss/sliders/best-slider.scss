@@ -24,24 +24,40 @@
 /* Стрелка */
 .slick-arrow{
     position: absolute;
-    width: 9px;
-    height: 18px;
+    width: 48px;
+    height: 48px;
     top: 50%;
     z-index: 5;
     border: 1px solid $colorGreyBorder;
     font-size: 0;
+    background-color: transparent;
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: 12px;
+        height: 12px;
+        top: 50%;
+        border-bottom: 1px solid $colorGreyBorder;
+    }
 }
 /* Стрелка влево */
 .slick-arrow.slick-prev{
-    background: url('../../img/arrow_left.svg') center no-repeat;
-    background-size: cover;
     left: -108px; 
+    &:after {
+        left: calc(50% + 4px);
+        transform: translate(-50%, -50%) rotate(45deg);
+        border-left: 1px solid $colorGreyBorder;
+    }
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next{
-    background: url('../../img/arrow_right.svg') center no-repeat;
-    background-size: cover;
     right: -108px;
+    &:after {
+        left: calc(50% - 4px);
+        transform: translate(-50%, -50%) rotate(-45deg);
+        border-right: 1px solid $colorGreyBorder;
+    }
 }
 /* Стрелка не активная */
 .slick-arrow.slick-disabled{}
