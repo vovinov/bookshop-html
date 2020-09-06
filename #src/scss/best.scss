@@ -1,140 +1,95 @@
 .best {
     margin-bottom: 100px;
-}
 
-.best__list {
-    position: relative;
-    display: flex;
-}
-.best__card {
-    flex: 0 1 20%;
-    border: 1px solid $colorGreyBorder;
-    transition: all .3s ease-in-out;
+    &__list {
+        position: relative;
+        display: flex;
+    }
 
-    &:hover {
-        border: 1px solid $colorBlack;
-        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
-
-        & .actions {
-            display: flex;
-        }
+    &__card {
+        flex: 0 1 20%;
     }
 }
-.card-best {
-    color: $colorBlack;
-}
-.card-best__content {
-    display: flex;
-    flex-direction: column;
-    min-height: 100%;
-    padding: 30px;
-}
 
-.card-best__img {
-    flex: 0 0 auto;
-    padding: 20px;
-}
 
-.card-best__version {
-    font-size: 1.2rem;
-    font-weight: 400;
-    color: $colorRed;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.card-best__title {
-    font-size: 1.6rem;
-    flex: 1;
-    margin-bottom: 12px;
-}
-
-.card-best__author {
-    font-size: 1.4rem;
-    color: rgb(124, 110, 101); 
-    flex: 1;   
-}
-.card-best__price {
-    font-size: 1.8rem;
-    font-weight: 500;
-    margin: 15px 0;
-}
-.card-best__rating {
-    display: flex;
-    align-items: center;
-}
-
-.rating__list {
-    display: inline-flex;
-    margin-right: 11px;
-}
-.icon--rating {
-    width: 12px;
-    height: 12px;
-    fill: $colorYellow;
-    margin-right: 7px;
-    &:last-child {
-        margin-right: 0;
+.rating {
+    &__list {
+        display: inline-flex;
+        margin-right: 11px;
     }
-}
-.rating__count {
-    font-size: 1.4rem;
-    line-height: 1.2;
+
+    &__count {
+        font-size: 1.4rem;
+        line-height: 1.2;
+    }
 }
 
 .actions {
-    display: none;
+    display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 15px;
-}
 
-.actions__button {
-    position: relative;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: 1.6rem;  
-
-    &:hover {
-        &::after {
-            width: 100%;
+    &__button {
+        position: relative;
+        background-color: transparent;
+        cursor: pointer;
+        font-size: 1.6rem;  
+    
+        &:hover {
+            &::after {
+                width: 100%;
+            }
+        }
+    
+        &:after {
+            position: absolute;
+            content: '';
+            height: 1px;
+            width: 0;
+            bottom: -10px;
+            left: 0;
+            background-color: $colorBlack;
+            transition: all .2s ease-in-out;
         }
     }
 
-    &:after {
-        position: absolute;
-        content: '';
-        height: 1px;
-        width: 0;
-        bottom: -10px;
-        left: 0;
-        background-color: $colorBlack;
+    &__icon {
+        position: relative;
+        width: 37px;
+        height: 37px;
+        border-radius: 50%;
         transition: all .2s ease-in-out;
+    
+        &:hover {
+            background-color: red;
+    
+            svg {
+                fill: $colorWhite;
+            }
+        }
+    
+        svg {
+            position: absolute;
+            width: 22px;
+            height: 22px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            transition: all .2s ease-in-out;
+        }
     }
 }
 
-.actions__icon {
-    position: relative;
-    width: 37px;
-    height: 37px;
-    border-radius: 50%;
-    transition: all .2s ease-in-out;
+.discount-card {
 
-    &:hover {
-        background-color: red;
-
-        svg {
-            fill: $colorWhite;
-        }
-    }
-
-    svg {
+    &__percent { 
         position: absolute;
-        width: 22px;
-        height: 22px;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        transition: all .2s ease-in-out;
+        font-size: 1.2rem;
+        color: $colorWhite;
+        font-weight: 700;  
     }
 }

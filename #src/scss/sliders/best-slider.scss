@@ -49,6 +49,9 @@
         transform: translate(-50%, -50%) rotate(45deg);
         border-left: 1px solid $colorGreyBorder;
     }
+    @media (max-width: 1620px) {
+        left: 0; 
+    }
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next{
@@ -57,6 +60,9 @@
         left: calc(50% - 4px);
         transform: translate(-50%, -50%) rotate(-45deg);
         border-right: 1px solid $colorGreyBorder;
+    }
+    @media (max-width: 1620px) {
+        right: 0; 
     }
 }
 /* Стрелка не активная */

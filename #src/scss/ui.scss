@@ -2,8 +2,10 @@
 .section {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-bottom: 31px;
-    border-bottom: 1px solid $colorGreyBorder;
+    border: 0;
+    
 
     &__header {
         font-size: 3rem;
@@ -27,8 +29,18 @@
         }
     }
 
-    &--no-border {
-        border: 0;
+    &--bordered {
+        border-bottom: 1px solid $colorGreyBorder;
+    }
+
+    &--centered {
+        justify-content: center;
     }
 }
+
+.button {
+    display: inline-block;
+    padding: 18px 50px;
+    cursor: pointer;
+  }
 

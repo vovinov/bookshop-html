@@ -1,3 +1,16 @@
+
+// Breaakpoint
+$ContainerPageLarge: 1300px;
+$ContainerPageMedium: 991.98px;
+$ContainerPageSmall: 767.98px;
+$ContainerPageSmallExtra: 479.98px;
+
+
+$ContainerContentOrigin: 1400px;
+$ContainerContentMedium: 991.98px;
+$ContainerContentSmall: 767.98px;
+$ContainerContentSmallExtra: 479.98px;
+
 body {
   font-family: 'CerebriSans', sans-serif;
 }
@@ -19,13 +32,13 @@ img {
   max-width: 1830px;
   margin: 0 auto;
   padding: 0 15px;
-  @media (max-width: 991.98px) {
+  @media (max-width: $ContainerPageMedium) {
     max-width: 970px;
   }
-  @media (max-width: 767.98px) {
+  @media (max-width: $ContainerPageSmall) {
     max-width: 750px;
   }
-  @media (max-width: 479.98px) {
+  @media (max-width: $ContainerPageSmallExtra) {
     max-width: none;
     padding: 0 10px;
   }
@@ -53,6 +66,16 @@ img {
     height: 43px;
     margin-bottom: 30px;
   }
+
+  &--rating {
+    width: 12px;
+    height: 12px;
+    fill: #ffbd00;
+    margin-right: 7px;
+    &:last-child {
+        margin-right: 0;
+    }
+  }
 }
 
 .button {
@@ -69,8 +92,9 @@ img {
 @import "./intro";
 @import "./categories";
 @import "./best";
+@import "./featured";
 
-
+@import "./components/card";
 
 @import "./sliders/main-slider";
 @import "./sliders/best-slider";

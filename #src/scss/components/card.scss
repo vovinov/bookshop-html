@@ -1,0 +1,81 @@
+.card-book {
+    border: 1px solid $colorGreyBorder;
+    transition: all .3s ease-in-out;
+
+    a {
+        color: $colorBlack;
+    }
+
+    &__content {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        padding: 30px;
+    }
+
+    &__img {
+        flex: 0 0 auto;
+        padding: 10px 25px 20px 25px;
+    }
+
+    &__version {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: $colorRed;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+
+    &__title {
+        font-size: 1.6rem;
+        flex: 1;
+        margin-bottom: 12px;
+    }
+    
+    &__author {
+        font-size: 1.4rem;
+        color: $colorAuthorCard; 
+        flex: 1;   
+    }
+
+    &__price {
+        display: flex;
+        align-items: center;
+        margin: 15px 0;
+    
+        &--actual {
+            font-size: 1.8rem;
+            font-weight: 500;
+            margin-right: 5px;
+        }
+    
+        &--old {
+            font-size: 1.2rem;
+            color: $colorAuthorCard;
+            text-decoration: line-through;
+    
+        }
+    }
+
+    &__rating {
+        display: flex;
+        align-items: center;
+    }
+
+    &__discount {
+        position: absolute;
+        width: 45px;
+        height: 45px;
+        top: 16px;
+        right: 33px;
+        content: '';
+        background-color: #3ee590;
+        border-radius: 50%;
+    }
+
+    &:hover {
+        border: 1px solid $colorBlack;
+        box-shadow: 3px 3px 20px rgba(0, 0, 0, 0.3);
+    }
+}

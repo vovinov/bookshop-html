@@ -1,16 +1,21 @@
-<section class="best">
+<section class="featured">
     <div class="container-content">
-        <div class="section">
-            <h2 class="section__header">Bestselling Books</h2>
-            <a class="section__link" href="#">
-                <span>View All</span>   
-                <svg class="icon icon--arrow">
-                    <use xlink:href="#category-icon--arrow" />
-                </svg>
-            </a>
+        <div class="section section--centered">
+            <h2 class="section__header">Featured Books</h2>
         </div>
-        <ul class="best__list">
-            <li class="best__card card-book">
+        <ul class="featured__navigation nav-featured">
+            <li class="nav-featured">
+                <button class="button nav-featured__button  nav-featured__button--active" data-filter=".featured">Featured</button>
+            </li>
+            <li class="nav-featured">
+                <button class="button nav-featured__button" data-filter=".sale">On Sale</button>
+            </li>
+            <li class="nav-featured">
+                <button class="button nav-featured__button" data-filter=".mostViewed">Most Viewed</button>
+            </li>
+        </ul>
+        <ul class="featured__list">
+            <li class="featured__item card-book featured">
                 <a href="#">
                     <div class="card-book__content">
                         <div class="card-book__img">
@@ -60,12 +65,10 @@
                             <span class="discount-card__percent">21%</span>
                         </div>
                     </div>
-                </a>
-                
-                
+                </a>   
             </li>
-            <li class="best__card card-book">
-                <a class="card-book" href="#">
+            <li class="featured__item card-book featured sale">
+                <a href="#">
                     <div class="card-book__content">
                         <div class="card-book__img">
                             <img src="./img/moon_stone-book.jpg" alt="MoonStone">
@@ -114,12 +117,10 @@
                             <span class="discount-card__percent">21%</span>
                         </div>
                     </div>
-                </a>
-                
-                
+                </a>   
             </li>
-            <li class="best__card card-book">
-                <a class="card-book" href="#">
+            <li class="featured__item card-book featured sale">
+                <a href="#">
                     <div class="card-book__content">
                         <div class="card-book__img">
                             <img src="./img/moon_stone-book.jpg" alt="MoonStone">
@@ -168,12 +169,10 @@
                             <span class="discount-card__percent">21%</span>
                         </div>
                     </div>
-                </a>
-                
-                
+                </a>   
             </li>
-            <li class="best__card card-book">
-                <a class="card-book" href="#">
+            <li class="featured__item card-book featured mostViewed">
+                <a href="#">
                     <div class="card-book__content">
                         <div class="card-book__img">
                             <img src="./img/moon_stone-book.jpg" alt="MoonStone">
@@ -222,12 +221,10 @@
                             <span class="discount-card__percent">21%</span>
                         </div>
                     </div>
-                </a>
-                
-                
+                </a>   
             </li>
-            <li class="best__card card-book">
-                <a class="card-book" href="#">
+            <li class="featured__item card-book featured" 
+                <a href="#">
                     <div class="card-book__content">
                         <div class="card-book__img">
                             <img src="./img/moon_stone-book.jpg" alt="MoonStone">
@@ -276,12 +273,10 @@
                             <span class="discount-card__percent">21%</span>
                         </div>
                     </div>
-                </a>
-                
-                
+                </a>   
             </li>
-            <li class="best__card card-book">
-                <a class="card-book" href="#">
+            <li class="featured__item card-book featured">
+                <a href="#">
                     <div class="card-book__content">
                         <div class="card-book__img">
                             <img src="./img/moon_stone-book.jpg" alt="MoonStone">
@@ -330,9 +325,7 @@
                             <span class="discount-card__percent">21%</span>
                         </div>
                     </div>
-                </a>
-                
-                
+                </a>   
             </li>
         </ul>
     </div>
