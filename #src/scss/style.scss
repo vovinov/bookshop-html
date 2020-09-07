@@ -93,8 +93,12 @@ img {
 @import "./categories";
 @import "./best";
 @import "./featured";
+@import "./deals";
+@import "./new-releases";
 
-@import "./components/card";
+@import "./components/card-book";
+@import "./components/card-deal";
 
 @import "./sliders/main-slider";
 @import "./sliders/best-slider";
+@import "./sliders/deals-slider";

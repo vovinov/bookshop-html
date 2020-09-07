@@ -67,6 +67,41 @@ $(document).ready(function() {
     document.querySelector(".nav-featured__button--active").classList.remove("nav-featured__button--active");
     event.target.classList.add("nav-featured__button--active");
   });
+
+   // Slider - deals -------------------------------------------
+   $('.deals__list').slick({
+    arrows: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    dots: true,
+    // autoplay: true,
+    // responsive: [
+    //   {
+    //     breakpoint: 1300,
+    //     settings: {
+    //       slidesToShow: 4
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 976,
+    //     settings: {
+    //       slidesToShow: 3,
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 767.98,
+    //     settings: {
+    //       slidesToShow: 2,
+    //     }
+    //   },
+    //   {
+    //     breakpoint: 479.98,
+    //     settings: {
+    //       slidesToShow: 1,
+    //     }
+    //   }
+    // ]
+  });
   
 });
   
