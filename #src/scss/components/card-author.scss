@@ -1,0 +1,25 @@
+
+.card-author {
+    padding: 10px;
+    text-align: center;
+    
+    &__img {
+        padding: 10px;
+        margin-bottom: 14px;
+
+        img {
+            border-radius: 50%;
+        }
+    }
+
+    &__title { 
+        font-size: 1.6rem;  
+        margin-bottom: 5px;
+    }
+
+    &__subtitle {
+        color: $colorTextSecondary;
+        font-size: 1.4rem;
+    }   
+}
+

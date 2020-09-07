@@ -1,4 +1,4 @@
-.card-book {
+.card-biography {
     border: 1px solid $colorGreyBorder;
     transition: all .3s ease-in-out;
 
@@ -9,23 +9,14 @@
     &__content {
         position: relative;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         min-height: 100%;
         padding: 30px;
-
-        &--row {
-            flex-direction: row;
-        }
     }
 
     &__img {
-        flex: 0 0 auto;
-        padding: 10px 25px 20px 25px;
-
-        &--row {
-            flex: 0 0 200px;
-            padding: 5px 10px;
-        }
+        flex: 0 0 200px;
+        padding: 5px 10px;
     }
 
     &__info {
@@ -33,7 +24,7 @@
         display: flex;
         flex-direction: column;
         min-height: 100%;
-        padding: 30px;
+        padding: 10px 5px;
     }
 
     &__version {
@@ -46,14 +37,12 @@
 
     &__title {
         font-size: 1.6rem;
-        flex: 1;
         margin-bottom: 12px;
     }
     
     &__author {
         font-size: 1.4rem;
-        color: $colorTextSecondary; 
-        flex: 1;   
+        color: $colorTextSecondary;   
     }
 
     &__price {

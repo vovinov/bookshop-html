@@ -1,0 +1,89 @@
+
+.new-releases {
+    margin-bottom: 100px;
+    &__section {
+        align-items: center;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__column {
+
+        &--small {
+            flex: 0 0 470px;
+        }
+
+        &--big {
+            flex: 0 1 100%;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__card {
+        flex: 0 1 25%;
+    }
+}
+
+
+.offer-releases {
+    height: 100%;
+    background: url('../img/new-releases-back.png') top no-repeat;
+    background-size: cover;
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        padding: 40px 60px;
+    }
+
+    &__img {
+        margin-bottom: 10px;
+        padding: 10px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__title {
+
+        span {
+            display: block;
+            font-weight: 400;
+            font-size: 4rem;
+
+            &:nth-child(2) {
+                color: #f75454;
+                font-weight: 700;
+            }
+    
+            &:last-child {
+                font-size: 3rem;
+                color: $colorTextSecondary;   
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 15px;
+            }
+        }
+        
+    }
+
+    &__button {
+        width: 170px;
+        background-color: #f75454;
+        font-size: 1.6rem;  
+        color: $colorWhite;
+        padding: 19px 0;
+    }
+}

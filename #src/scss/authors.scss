@@ -1,0 +1,12 @@
+.authors {
+    padding-bottom: 100px;
+    border-bottom: 1px solid $colorGreyBorder;
+    &__list {
+        display: flex;
+        position: relative;
+    }
+    &__card {
+        flex: 0 1 20%;
+    }
+    
+}

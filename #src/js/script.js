@@ -56,7 +56,7 @@ $(document).ready(function() {
     }
   });
   
-  var filtersElem = document.querySelector('.nav-featured');
+  var filtersElem = document.querySelector('.featured__navigation');
   filtersElem.addEventListener( 'click', function( event ) {
     if ( !matchesSelector( event.target, 'button' ) ) {
       return;
@@ -64,43 +64,31 @@ $(document).ready(function() {
     var filterValue = event.target.getAttribute('data-filter');
     iso.arrange({ filter: filterValue });
 
-    document.querySelector(".nav-featured__button--active").classList.remove("nav-featured__button--active");
-    event.target.classList.add("nav-featured__button--active");
+    document.querySelector(".navigation__button--active").classList.remove("navigation__button--active");
+    event.target.classList.add("navigation__button--active");
   });
 
-   // Slider - deals -------------------------------------------
-   $('.deals__list').slick({
+  // Slider - deals -------------------------------------------
+  $('.deals__list').slick({
     arrows: true,
     slidesToShow: 2,
     slidesToScroll: 2,
-    dots: true,
-    // autoplay: true,
-    // responsive: [
-    //   {
-    //     breakpoint: 1300,
-    //     settings: {
-    //       slidesToShow: 4
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 976,
-    //     settings: {
-    //       slidesToShow: 3,
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 767.98,
-    //     settings: {
-    //       slidesToShow: 2,
-    //     }
-    //   },
-    //   {
-    //     breakpoint: 479.98,
-    //     settings: {
-    //       slidesToShow: 1,
-    //     }
-    //   }
-    // ]
+    dots: true
+  })
+  // Slider - biography -------------------------------------------
+  $('.biography__list').slick({
+    arrows: false,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    dots: true
+  });
+
+  // Slider - authors -------------------------------------------
+  $('.authors__list').slick({
+    arrows: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
+    dots: false
   });
   
 });

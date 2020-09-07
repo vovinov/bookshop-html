@@ -54,7 +54,7 @@
     
     &__author {
         font-size: 1.4rem;
-        color: $colorAuthorCard;    
+        color: $colorTextSecondary;    
     }
 
     &__price {
@@ -70,7 +70,7 @@
     
         &--old {
             font-size: 1.2rem;
-            color: $colorAuthorCard;
+            color: $colorTextSecondary;
             text-decoration: line-through;
         }
     }

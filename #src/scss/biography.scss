@@ -1,0 +1,13 @@
+.biography {
+    margin-bottom: 180px;
+    
+    &__list {
+        position: relative;
+        display: flex;
+    }
+    &__card {
+        flex: 0 1 33.3334%;
+    }
+    
+}
+
