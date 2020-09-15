@@ -1,0 +1,38 @@
+.newsletter {
+    text-align: center;
+    padding: 100px 0;
+
+    &__heading {    
+        font-size: 3rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__text {
+        font-size: 1.4rem;
+        color: $colorTextSecondary;
+        line-height: 1.7; 
+        margin-bottom: 40px;
+    }
+
+    &__input-group {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.action-newsletter {
+
+    &__input {
+        min-width: 450px;
+        border: 1px solid $colorBlack;
+        padding: 19px 32px 26px 32px;
+        margin-right: 21px;
+    }
+
+    &__button {
+        font-size: 1.6rem;
+        background-color: $colorBlack;
+        color: $colorWhite;
+    }
+}

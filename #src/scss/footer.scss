@@ -1,0 +1,155 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+
+    &__top {
+
+    }
+    
+    &__bottom {
+        padding: 33px 0;
+    }
+}
+
+.footer-navigation {
+
+    &__content {
+        display: flex;
+        padding-bottom: 100px;
+        border-bottom: 1px solid $colorGreyBorder;
+    }
+    &__contacts {
+        flex: 0 1 295px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__links {
+
+    }
+}
+
+.contacts-footer {
+    font-size: 1.4rem;
+    margin-right: 115px;
+    padding: 5px;
+
+    &__logo {     
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-transform: uppercase; 
+        margin-bottom: 35px;  
+    }
+
+    &__adress {
+        margin-bottom: 35px;    
+    }
+
+    &__email {
+        
+    }
+    &__phone {
+        margin-bottom: 35px;  
+    }
+}
+
+.social-footer {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1.2;
+
+    &__item {
+
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+
+    &__link {
+        display: flex;
+    }
+
+    &__icon {
+        width: 16px;
+        height: 16px;
+        transition: all 0.2s; 
+
+        &:hover {
+            fill: $colorRed;
+        }
+    }
+}
+
+.links-footer {
+    display: flex;
+    flex-grow: 1;
+
+    &__column {
+        flex: 0 1 25%;
+        padding: 5px;
+    }
+    &__title {
+        font-size: 1.8rem;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__item {
+
+        &:not(:last-child) {
+            margin-bottom: 27px;
+        }
+    }
+    &__link {
+        font-size: 1.4rem;  
+    }
+}
+
+.footer-actions {
+    &__content {
+        display: flex;
+        align-items: center;
+    }
+
+    &__copyright {
+        flex-grow: 1;
+        font-size: 1.4rem;
+    }
+
+    &__companies {
+        display: inline-flex;
+    }
+
+    &__language {
+        min-width: 250px;
+        min-height: 60px;
+        padding: 20px 30px 14px 10px;
+        margin-right: 20px;
+        border: 1px solid $colorGreyBorder;
+    }
+
+    &__currency {
+        min-height: 60px;
+        min-width: 130px;
+    }
+}
+
+.footer-companies {
+    &__item {
+        display: inline-block;
+        width: 60px;
+        margin-right: 33px;
+
+        &:not(:last-child) {
+            margin-right: 5px;
+        }
+
+    }
+    &__link {
+        display: inline-block;
+        width: 60px;
+    }
+}

@@ -1,5 +1,5 @@
 
-// Breaakpoint
+// Breakpoint
 $ContainerPageLarge: 1300px;
 $ContainerPageMedium: 991.98px;
 $ContainerPageSmall: 767.98px;
@@ -78,11 +78,6 @@ img {
   }
 }
 
-.button {
-  display: inline-block;
-  padding: 18px 50px;
-}
-
 @import "./null";
 @import "./variables";
 @import "./fonts";
@@ -97,6 +92,8 @@ img {
 @import "./new-releases";
 @import "./biography";
 @import "./authors";
+@import "./newsletters";
+@import "./footer";
 
 @import "./components/card-book";
 @import "./components/card-deal";
