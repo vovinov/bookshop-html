@@ -1,10 +1,10 @@
 
-.section {
+.heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 17px;
     border: 0;
+    margin-bottom: 17px;
     
 
     &__header {
@@ -29,12 +29,14 @@
         }
     }
 
-    &--bordered {
+    &--categories {
         border-bottom: 1px solid $colorGreyBorder;
+        
     }
 
-    &--centered {
+    &--featured {
         justify-content: center;
+        margin-bottom: 37px;
     }
 }
 

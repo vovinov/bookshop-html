@@ -1,5 +1,5 @@
 .best {
-    margin-bottom: 100px;
+    padding-bottom: 90px;
 
     &__list {
         position: relative;
@@ -12,74 +12,6 @@
 }
 
 
-.rating {
-    &__list {
-        display: inline-flex;
-        margin-right: 11px;
-    }
-
-    &__count {
-        font-size: 1.4rem;
-        line-height: 1.2;
-    }
-}
-
-.actions {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-top: 15px;
-
-    &__button {
-        position: relative;
-        background-color: transparent;
-        cursor: pointer;
-        font-size: 1.6rem;  
-    
-        &:hover {
-            &::after {
-                width: 100%;
-            }
-        }
-    
-        &:after {
-            position: absolute;
-            content: '';
-            height: 1px;
-            width: 0;
-            bottom: -10px;
-            left: 0;
-            background-color: $colorBlack;
-            transition: all .2s ease-in-out;
-        }
-    }
-
-    &__icon {
-        position: relative;
-        width: 37px;
-        height: 37px;
-        border-radius: 50%;
-        transition: all .2s ease-in-out;
-    
-        &:hover {
-            background-color: red;
-    
-            svg {
-                fill: $colorWhite;
-            }
-        }
-    
-        svg {
-            position: absolute;
-            width: 22px;
-            height: 22px;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            transition: all .2s ease-in-out;
-        }
-    }
-}
 
 .discount-card {
 

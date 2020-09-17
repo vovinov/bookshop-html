@@ -1,5 +1,5 @@
 .categories {
-    margin-bottom: 100px;
+    padding: 95px 0px 102px 0px;
 }
 
 .categories__sections {
@@ -36,7 +36,7 @@
     flex-direction: column;
     min-height: 100%;
     width: 100%;
-    padding: 35px 48px 40px 42px;
+    padding: 44px 48px 40px 41px;
 }
 
 .card-category__item {
@@ -63,7 +63,7 @@
     position: relative;
     font-size: 1.6rem;
     color: $colorBlack;
-    margin-top: 20px;
+    margin-top: 14px;
 
     &:after {
         position: absolute;
